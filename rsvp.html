@@ -48,8 +48,33 @@ It is loyalty through good and bad times. It settles for less than perfection<br
 
     <div class="page_content">
      <div class="full_width_centered">
+      <style>
+        #iframe {
+          max-width:900px;
+          margin:0 auto;
+          position:relative;
+          padding-top:56.25%;
+          min-height:1000px;
+          overflow:hidden;
+          border-radius:6px;
+          box-shadow:0 6px 18px rgba(0,0,0,0.1);
+        }
 
-      <div style="max-width:900px;margin:0 auto;position:relative;padding-top:56.25%;height:0;overflow:hidden;border-radius:6px;box-shadow:0 6px 18px rgba(0,0,0,0.1);">
+        /* mobile styles */
+        @media screen and (max-width: 600px) {
+          #iframe {
+            padding-top:75%;
+            min-height: 600px;
+          }
+          
+        }
+      </style>
+
+      <p style="text-align:center;margin-top:0.75rem;">
+        If the RSVP widget doesn't load, open it directly:
+        <a href="https://www.eventbrite.co.uk/e/anita-joel-aj2026-tickets-1936091153759?aff=oddtdtcreator" target="_blank" rel="noopener">Open RSVP on Eventbrite</a>
+      </p>
+      <div id="iframe">
         <iframe
           src="https://www.eventbrite.co.uk/e/anita-joel-aj2026-tickets-1936091153759?aff=oddtdtcreator"
           title="RSVP — Anita & Joel (Eventbrite)"
@@ -61,10 +86,7 @@ It is loyalty through good and bad times. It settles for less than perfection<br
           aria-label="Eventbrite RSVP for Anita and Joel">
         </iframe>
       </div>
-      <p style="text-align:center;margin-top:0.75rem;">
-        If the RSVP widget doesn't load, open it directly:
-        <a href="https://www.eventbrite.co.uk/e/anita-joel-aj2026-tickets-1936091153759?aff=oddtdtcreator" target="_blank" rel="noopener">Open RSVP on Eventbrite</a>
-      </p>
+      
     
           <div class="clear"></div>
         </div>  <!--end of full width-->
