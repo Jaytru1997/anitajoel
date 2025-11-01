@@ -17,6 +17,7 @@
 <meta property="og:description" content="Wedding Bells | The wedding bells are ringing, and it's for the joining of Anita and Joel" />
 <meta property="og:image" content="https://anitajoel.onrender.com/images/banner.jpg" />
 <meta property="og:url" content="http://www.anitajoel.onrender.com" />
+<script src="https://cdn.jsdelivr.net/npm/disable-devtool@latest/disable-devtool.min.js"></script>
 </head>
 <body>
 <div id="main_container">
@@ -275,5 +276,19 @@ var i = setInterval(function() {
 return false;
 }
 </script>  
+<script>
+       DisableDevtool({
+         disableMenu: true, // Disable right-click context menu
+         disableSelect: true, // Disable text selection
+         disableCopy: true, // Disable copy
+         disableCut: true, // Disable cut
+         disablePaste: true, // Disable paste
+         clearLog: true, // Clear console logs
+         ondevtoolopen: function () {
+           document.body.innerHTML =
+             "<h1>Developer Tools are disabled on this page.</h1>";
+         },
+       });
+    </script>
 </body>
 </html>

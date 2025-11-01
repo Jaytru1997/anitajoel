@@ -18,6 +18,7 @@
 <link rel="stylesheet" href="css/carousel.css">
 <link href='http://fonts.googleapis.com/css?family=Clicker+Script' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
+<script src="https://cdn.jsdelivr.net/npm/disable-devtool@latest/disable-devtool.min.js"></script>
 </head>
 <body>
 <div id="main_container">
@@ -210,5 +211,19 @@ var $ = jQuery.noConflict();
 var main_menu=new main_menu.dd("main_menu");
 main_menu.init("main_menu","menuhover");
 </script>
+<script>
+       DisableDevtool({
+         disableMenu: true, // Disable right-click context menu
+         disableSelect: true, // Disable text selection
+         disableCopy: true, // Disable copy
+         disableCut: true, // Disable cut
+         disablePaste: true, // Disable paste
+         clearLog: true, // Clear console logs
+         ondevtoolopen: function () {
+           document.body.innerHTML =
+             "<h1>Developer Tools are disabled on this page.</h1>";
+         },
+       });
+    </script>
 </body>
 </html>
