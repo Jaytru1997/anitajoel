@@ -10,8 +10,8 @@
 <!-- social sharing og details-->
 <meta property="og:title" content="Anita & Joel" />
 <meta property="og:description" content="Wedding Bells | The wedding bells are ringing, and it's for the joining of Anita and Joel" />
-<meta property="og:image" content="https://anitajoel.onrender.com/images/banner.jpg" />
-<meta property="og:url" content="http://www.anitajoel.onrender.com" />
+<meta property="og:image" content="https://anitajoel.lesous.ng/images/banner.jpg" />
+<meta property="og:url" content="http://www.anitajoel.lesous.ng" />
 
 <link rel="stylesheet" type="text/css" media="all" href="style.css" />
 <link rel="stylesheet" type="text/css" media="all" href="colors/green.css" />
@@ -50,42 +50,59 @@ It is loyalty through good and bad times. It settles for less than perfection<br
     <div class="page_content">
      <div class="full_width_centered">
       <style>
-        #iframe {
-          max-width:900px;
-          margin:0 auto;
-          position:relative;
-          padding-top:56.25%;
-          min-height:1000px;
-          overflow:hidden;
-          border-radius:6px;
-          box-shadow:0 6px 18px rgba(0,0,0,0.1);
+        .rsvp_container {
+          text-align: center;
+          padding: 60px 0 100px 0;
         }
-
-        /* mobile styles */
-        @media screen and (max-width: 768px) {
-          #iframe {
-            padding-top:75%;
-            min-height: 600px;
-          }
-          
+        .rsvp_invitation {
+          font-family: 'Clicker Script', cursive;
+          font-size: 42px;
+          color: #b5af47;
+          margin-bottom: 25px;
+        }
+        .rsvp_link_wrapper {
+          display: inline-block;
+          position: relative;
+        }
+        .rsvp-button-styled {
+          display: inline-block;
+          font-family: "Open Sans", sans-serif;
+          font-weight: 800;
+          font-size: 18px;
+          color: #999700; 
+          text-decoration: none;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          border-bottom: 2px solid transparent;
+          transition: all 0.3s ease;
+          padding: 10px 5px;
+        }
+        .rsvp-button-styled:hover {
+          color: #b5af47;
+          border-bottom: 2px solid #b5af47;
+          transform: translateY(-2px);
+        }
+        /* Mobile adjustment for swirls if needed */
+        @media screen and (max-width: 600px) {
+           .swirl_left_small { background: none; padding-left: 0; }
+           .swirl_right_small { background: none; padding-right: 0; }
         }
       </style>
 
-      <p style="text-align:center;margin-top:0.75rem;">
-        If the RSVP widget doesn't load, open it directly:
-        <a href="https://www.eventbrite.co.uk/e/anita-joel-aj2026-tickets-1936091153759?aff=oddtdtcreator" target="_blank" rel="noopener">Open RSVP on Eventbrite</a>
-      </p>
-      <div id="iframe">
-        <iframe
-          src="https://www.eventbrite.co.uk/e/anita-joel-aj2026-tickets-1936091153759?aff=oddtdtcreator"
-          title="RSVP — Anita & Joel (Eventbrite)"
-          loading="lazy"
-          allowfullscreen
-          style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
-          referrerpolicy="no-referrer-when-downgrade"
-          role="region"
-          aria-label="Eventbrite RSVP for Anita and Joel">
-        </iframe>
+      <div class="rsvp_container">
+        <div class="rsvp_invitation">
+          We would be honored by your presence
+        </div>
+        
+        <div class="rsvp_link_wrapper">
+           <span class="swirl_left_small">
+             <span class="swirl_right_small">
+               <a href="https://www.eventbrite.com/e/1936091153759/" target="_blank" rel="noopener" class="rsvp-button-styled">
+                 RSVP on Eventbrite
+               </a>
+             </span>
+           </span>
+        </div>
       </div>
       
     
